@@ -1,0 +1,6 @@
+// Configuración de preferencias y herramientas para el espacio de trabajo en VS Code
+{
+    "python.pythonPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true
+}

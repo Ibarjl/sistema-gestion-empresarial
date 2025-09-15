@@ -1,3 +1,4 @@
+# Archivo que indica qué archivos y carpetas deben ser ignorados por Git
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

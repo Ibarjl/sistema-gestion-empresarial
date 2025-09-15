@@ -1,0 +1,4 @@
+# Archivo que lista las dependencias necesarias para el proyecto
+# Dependencias principales
+reflex
+psycopg2-binary

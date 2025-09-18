@@ -4,9 +4,15 @@ Este directorio contiene los archivos necesarios para importar una estructura co
 
 ## Archivos incluidos
 
-- `github_issues.csv` - CSV con 246 issues organizadas (épicas, features, tasks)
-- `import_issues.py` - Script de Python para importar las issues automáticamente
-- `ISSUES_IMPORT_README.md` - Este archivo con instrucciones
+- `github_issues.csv` - CSV con 246 issues organizadas (épicas, features, tasks) con headers claros
+- `import_issues.py` - Script de Python con protección contra inyección de comandos
+- `ISSUES_IMPORT_README.md` - Este archivo con instrucciones completas
+
+### Formato del CSV
+El archivo CSV contiene las siguientes columnas:
+- `issue_title` - Título de la issue con prefijo [ÉPICA], [FEATURE] o [TASK]
+- `description` - Descripción detallada de la funcionalidad a implementar
+- `issue_type` - Tipo de issue: epic, feature, o task
 
 ## Estructura de Issues
 

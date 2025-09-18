@@ -2,14 +2,20 @@
 import csv
 import subprocess
 import sys
+import shlex
 
 def create_issue(title, body, labels):
     """Create a GitHub issue using gh CLI"""
+    # Escape inputs to prevent command injection
+    safe_title = shlex.quote(title)
+    safe_body = shlex.quote(body)
+    safe_labels = shlex.quote(labels)
+
     cmd = [
         'gh', 'issue', 'create',
-        '--title', title,
-        '--body', body,
-        '--label', labels
+        '--title', safe_title,
+        '--body', safe_body,
+        '--label', safe_labels
     ]
 
     try:
@@ -34,9 +40,9 @@ def main():
 
         for row in reader:
             total_count += 1
-            title = row['title'].strip('"')
-            body = row['body'].strip('"')
-            labels = row['labels'].strip('"')
+            title = row['issue_title'].strip('"')
+            body = row['description'].strip('"')
+            labels = row['issue_type'].strip('"')
 
             if create_issue(title, body, labels):
                 success_count += 1

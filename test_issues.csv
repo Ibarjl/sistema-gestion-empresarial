@@ -1,0 +1,6 @@
+title,body,labels
+"[ÉPICA] Business Core","Núcleo de Negocio Tradicional (ERP Base) con módulos financieros y recursos humanos","epic"
+"[FEATURE] Financial Management","Módulos de gestión financiera tradicional","feature"
+"[TASK] General Ledger","Implementar contabilidad general robusta","task"
+"[TASK] Accounts Payable Receivable","Desarrollar cuentas por pagar y cobrar","task"
+"[TASK] Budgeting Planning","Crear presupuestación y planificación financiera","task"

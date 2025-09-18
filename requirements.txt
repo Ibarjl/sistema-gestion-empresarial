@@ -1,4 +1,25 @@
-# Archivo que lista las dependencias necesarias para el proyecto
-# Dependencias principales
-reflex
-psycopg2-binary
+# AI/ML Dependencies
+scikit-learn>=1.3.0
+pandas>=2.0.0
+numpy>=1.24.0
+tensorflow>=2.13.0
+transformers>=4.30.0
+
+# Web Framework
+reflex>=0.4.0
+fastapi>=0.100.0
+
+# Database
+psycopg2-binary>=2.9.0
+sqlalchemy>=2.0.0
+alembic>=1.11.0
+
+# Real-time Processing
+kafka-python>=2.0.0
+celery>=5.3.0
+redis>=4.6.0
+
+# Logistics & Optimization
+networkx>=3.1.0
+scipy>=1.11.0
+geopy>=2.3.0

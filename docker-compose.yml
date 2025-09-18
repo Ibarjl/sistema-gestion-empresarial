@@ -12,5 +12,23 @@ services:
       - "5432:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
+
+  ai-engine:
+    build: ./ai_engine
+    environment:
+      - POSTGRES_URL=postgresql://user:password@db:5432/ai_db
+  
+  logistics-core:
+    build: ./logistics_core
+    depends_on:
+      - kafka
+      - redis
+  
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    
+  redis:
+    image: redis:alpine
+
 volumes:
   db_data:

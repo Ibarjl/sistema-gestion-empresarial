@@ -37,7 +37,7 @@ sistema_gestion_empresarial/
 2. Activa el entorno virtual:
    - En Windows:
      ```bash
-     .venv\Scripts\activate
+     source .venv\Scripts\activate
      ```
    - En Linux/Mac:
      ```bash
